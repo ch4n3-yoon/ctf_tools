@@ -21,8 +21,15 @@ if not validators.url(url):
 f = open("data.txt", "r")
 lines = f.readlines()
 for line in lines:
-    # r = get(url + line)
-    print "[*] requesting..", url + line
+    line = line.replace("\x0a", "")
+    r = get(url + line)
+    print "[+] requesting..", url + line
+
+    if r.status_code == 200:
+        print "[*] found '{0}'!".format(line)
+    elif r.status_code == 404:
+        print "[x] not found '{0}'..".format(line)
+    print
 
 
 f.close()

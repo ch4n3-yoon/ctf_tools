@@ -4,4 +4,3 @@ index.php~
 .index.php.swp
 ~index.php
 config.php
-
