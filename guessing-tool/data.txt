@@ -4,3 +4,13 @@ index.php~
 .index.php.swp
 ~index.php
 config.php
+index.php.bak
+.index.php.bak
+~index.php.bak
+.robots.txt.swp
+admin
+admin.php
+dbconfig.php
+.dbconfig.php.swp
+dbconfig.php~
+~dbconfig.php
