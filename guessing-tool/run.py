@@ -25,13 +25,18 @@ for line in lines:
     r = get(url + line)
     print "[+] requesting..", url + line
 
-    if r.status_code == 200:
+    if r.status_code == 404:
+        print "[x] not found '{0}'..".format(line)
+
+    elif r.status_code == 200:
         print "[*] found '{0}'!".format(line)
         print "="*10 + " {0} ".format(line) + "="*10
         print r.text
         print "="*len("="*10 + " {0} ".format(line) + "="*10)
-    elif r.status_code == 404:
-        print "[x] not found '{0}'..".format(line)
+
+    elif r.status_code == 403:
+        print "[*] 403 forbidden '{0}'.".format(line)
+
     print
 
 
