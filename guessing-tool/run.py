@@ -27,6 +27,9 @@ for line in lines:
 
     if r.status_code == 200:
         print "[*] found '{0}'!".format(line)
+        print "="*10 + " {0} ".format(line) + "="*10
+        print r.text
+        print "="*len("="*10 + " {0} ".format(line) + "="*10)
     elif r.status_code == 404:
         print "[x] not found '{0}'..".format(line)
     print
