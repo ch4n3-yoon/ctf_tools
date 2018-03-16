@@ -14,3 +14,4 @@ dbconfig.php
 .dbconfig.php.swp
 dbconfig.php~
 ~dbconfig.php
+.git
