@@ -15,3 +15,7 @@ dbconfig.php
 dbconfig.php~
 ~dbconfig.php
 .git
+.htaccess
+.htpasswd
+login.php
+login.php~
