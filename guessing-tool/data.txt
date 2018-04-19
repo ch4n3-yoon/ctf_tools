@@ -19,3 +19,6 @@ dbconfig.php~
 .htpasswd
 login.php
 login.php~
+user.php
+user.php~
+~user.php
