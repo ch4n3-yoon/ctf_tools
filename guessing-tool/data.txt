@@ -22,3 +22,9 @@ login.php~
 user.php
 user.php~
 ~user.php
+upload
+uploads
+submit.php
+.submit.php.swp
+~submit.php
+submit.php~
