@@ -30,3 +30,13 @@ submit.php
 .submit.php.swp
 ~submit.php
 submit.php~
+flag.php
+flag.php.bak
+.flag.php.swp
+flag.php~
+~flag.php
+flag
+flag.bak
+.flag.swp
+~flag
+flag~
