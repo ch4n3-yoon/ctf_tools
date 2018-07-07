@@ -4,6 +4,9 @@
 from requests import *
 import sys
 import validators
+import os
+
+path = os.path.dirname(os.path.realpath(__file__))
 
 if len(sys.argv) == 1:
     print "[*] usage : {0} http://url.com/".format(sys.argv[0])
@@ -18,7 +21,7 @@ if not validators.url(url):
     print "[x] your url is not valid."
     sys.exit(-1)
 
-f = open("data.txt", "r")
+f = open("{0}/data.txt".format(path), "r")
 lines = f.readlines()
 for line in lines:
     line = line.replace("\x0a", "")
@@ -41,5 +44,3 @@ for line in lines:
 
 
 f.close()
-
-
